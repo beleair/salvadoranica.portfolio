@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pinterest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="pinterestlogo.png">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="sidebar">
+            <img src="logo.png" alt="Sidebar Logo" class="sidebar-image">
+        </div>
+
+        <div class="main-content">
+            <nav class="navbar">
+                <div class="nav-left">
+                    <a href="index.html" class="nav-btn" id="homeBtn" data-tooltip="Home">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    <a href="profile.html" class="nav-btn" id="profileBtn" data-tooltip="Profile">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <a href="#" class="nav-btn" id="messagesBtn" data-tooltip="Messages">
+                        <i class="fa-solid fa-message"></i>
+                    </a>
+                </div>
+
+                <div class="search-container">
+                    <div class="search-input-wrapper">
+                        <input type="text" id="searchInput" placeholder="🔍︎ Search" />
+                    </div>
+                </div>
+            
+                <div class="nav-right">
+                    <a href="createpin.html" class="nav-btn active" id="createBtn" data-tooltip="Create">
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
+                    <a href="#" class="nav-btn" id="updatesBtn" data-tooltip="Updates">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
+                    <a href="#" class="nav-btn" id="settingsBtn" data-tooltip="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+                </div>
+            </nav>
+        <div class = "create-pin-page"> 
+            <div class="create-pin-container">
+                <div class="create-pin-header">
+                    
+                    <h2>Create Pin</h2>
+                    <div class="header-actions">
+                        <a href="#" role="button" class="save-button toggle-button">Publish</a>
+                        <button type="button" class="close-button"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+
+                <div class="create-pin-form-grid">
+                    <div class="media-upload-section">
+                        <div class="upload-box" id="uploadBox">
+                            <input type="file" id="fileInput" accept="image/jpeg,image/png" hidden>
+                            <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+                            <p>Choose a file or drag and drop it here</p>
+                            <p class="upload-recommendation">We recommend using high quality .jpg files less than 20 MB or .mp4 files less than 200 MB.</p>
+                        </div>
+                        <a href="#" role="button" class="save-from-url-button toggle-button">Save from URL</a>
+                        <div class="uploaded-image-preview" id="imagePreview">
+                            </div>
+                    </div>
+
+                    <div class="pin-details-section">
+                        <div class="form-group">
+                            <label for="pinTitle" class="visually-hidden">Title</label>
+                            <input type="text" id="pinTitle" placeholder="Add a title" class="text-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pinDescription" class="visually-hidden">Description</label>
+                            <textarea id="pinDescription" placeholder="Add a detailed description" class="text-input textarea"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pinLink" class="visually-hidden">Link</label>
+                            <input type="url" id="pinLink" placeholder="Add a link" class="text-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pinBoard" class="visually-hidden">Board</label>
+                            <select id="pinBoard" class="select-input">
+                                <option value="" selected class="hide-option">Choose a board</option>
+                                <option value="fit">fits</option>
+                                <option value="uni">uni</option>
+                                <option value="mantras">mantras</option>
+                                <option value="clean diet">clean diet</option>
+                                <option value="safe">safe space</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pinTags" class="visually-hidden">Tagged topics</label>
+                            <input type="text" id="pinTags" placeholder="Search for a tag" class="text-input">
+                            <p class="hint-text">Don't worry, people won't see your tags.</p>
+                        </div>
+
+                        <div class="form-group tag-products-group">
+                            <p class="form-label">Tag Products</p>
+                            <a href="#" role="button" class="add-products-button toggle-button"><i class="fa-solid fa-plus"></i> Add products</a>
+                        </div>
+
+                       <div class="more-options-group">
+    <p class="more-options-toggle">More options <i class="fa-solid fa-chevron-down"></i></p>
+    <div class="more-options-content" style="display: none;">
+        <div class="form-group toggle-group">
+            <label class="toggle-switch">
+                <input type="checkbox" id="allowCommentsToggle">
+                <span class="slider round"></span>
+            </label>
+            <label for="allowCommentsToggle">Allow people to comment</label>
+        </div>
+
+        <div class="form-group toggle-group">
+            <label class="toggle-switch">
+                <input type="checkbox" id="showSimilarProductsToggle">
+                <span class="slider round"></span>
+            </label>
+            <label for="showSimilarProductsToggle">Show similar products</label>
+            <p class="hint-text">
+                People can shop products similar to what's shown in this Pin using visual search
+                Shopping recommendations aren't available for Idea ads and Pins with tagged
+                products or paid partnership label
+            </p>
+        </div>
+
+        <div class="form-group">
+            <label for="altText" class="form-label">Alt Text</label>
+            <input type="text" id="altText" placeholder="Describe your Pin's visual details" class="text-input">
+            <p class="hint-text">This helps people using screen readers understand what your Pin is about</p>
+        </div>
+    </div>
+</div>
+</div>
+
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

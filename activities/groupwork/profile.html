@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pinterest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="pinterestlogo.png">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="sidebar">
+            <img src="logo.png" alt="Sidebar Logo" class="sidebar-image">
+        </div>
+
+       <div class="main-content">
+            <nav class="navbar">
+                <div class="nav-left">
+                    <a href="index.html" class="nav-btn" id="homeBtn" data-tooltip="Home">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    <a href="profile.html" class="nav-btn" id="profileBtn" data-tooltip="Profile">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <a href="#" class="nav-btn" id="messagesBtn" data-tooltip="Messages">
+                        <i class="fa-solid fa-message"></i>
+                    </a>
+                </div>
+
+                <div class="search-container">
+                    <div class="search-input-wrapper">
+                        <input type="text" id="searchInput" placeholder="🔍︎ Search" />
+                    </div>
+                </div>
+
+                <div class="nav-right">
+                     <a href="createpin.html" class="nav-btn" id="createBtn" data-tooltip="Create">
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
+                    <a href="#" class="nav-btn" id="updatesBtn" data-tooltip="Updates">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
+                    <a href="#" class="nav-btn" id="settingsBtn" data-tooltip="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="profile-container">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <img src="avatar.jpg" alt="Profile Avatar">
+                    </div>
+                        <div class="profile-details">
+        <h2 class="profile-username">Kate Saie</h2>
+        <p class="profile-handle">@k8.saie</p>
+        <p class="profile-stats">142 following</p>
+        <div class="profile-actions">
+            <a href="#" class="profile-action-btn profile-clickable-btn">Share</a>
+            <a href="#" class="profile-action-btn profile-clickable-btn">Edit profile</a>
+        </div>
+    </div>
+</div>
+
+                <div class="profile-tabs">
+                    <button class="tab-btn profile-clickable-btn " id="createdTab">Created</button>
+                    <button class="tab-btn profile-clickable-btn active" id="savedTab">Saved</button>
+                </div>
+
+                 <div id="createdContent" class="tab-content">
+                    <div class="empty-feed-message">
+                         <p>Nothing to show...yet! Pins you create will live here.</p>
+                         <button class="create-pin-btn">Create Pin</button>
+                    </div>
+                </div>
+
+               
+
+                <div id="savedContent" class="tab-content">
+                    <div class="profile-boards-grid">
+                        <a href="#" class="board-card profile-clickable-btn">
+                            <img src="all.png" alt="Board Cover" class="board-cover">
+                            <div class="board-info">
+                                <h3 class="board-title">All Pins</h3>
+                                <p class="board-stats">50 Pins</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="board-card profile-clickable-btn">
+                            <img src="uni.png" alt="Board Cover" class="board-cover">
+                            <div class="board-info">
+                                <h3 class="board-title">Uni Life</h3>
+                                <p class="board-stats">7 Pins</p>
+                            </div>
+                        </a>
+                        <a href="#" class="board-card profile-clickable-btn">
+                            <img src="diet.png" alt="Board Cover" class="board-cover">
+                            <div class="board-info">
+                                <h3 class="board-title">Clean Diet</h3>
+                                <p class="board-stats">10 Pins</p>
+                            </div>
+                        </a>
+                        <a href="#" class="board-card profile-clickable-btn">
+                            <img src="mantra.png" alt="Board Cover" class="board-cover">
+                            <div class="board-info">
+                                <h3 class="board-title">Mantras</h3>
+                                <p class="board-stats">8 Pins </p>
+                            </div>
+                        </a>
+                        <a href="#" class="board-card profile-clickable-btn">
+                            <img src="fits.png" alt="Board Cover" class="board-cover">
+                            <div class="board-info">
+                                <h3 class="board-title">Fits</h3>
+                                <p class="board-stats">13 Pins</p>
+                            </div>
+                        </a>
+                        <a href="#" class="board-card profile-clickable-btn">
+                            <img src="safe.png" alt="Board Cover" class="board-cover">
+                            <div class="board-info">
+                                <h3 class="board-title">Safe Space</h3>
+                                <p class="board-stats">12 Pins</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pinterest</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="pinterestlogo.png" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="sidebar">
+        <img src="logo.png" alt="Sidebar Logo" class="sidebar-image" />
+      </div>
+
+      <div class="main-content">
+        <nav class="navbar">
+          <div class="nav-left">
+            <a href="../../index.html" class="nav-btn" id="homeBtn" data-tooltip="Portfolio">
+              <i class="fa-solid fa-circle-arrow-left"></i>
+            </a>
+            <a href="index.html" class="nav-btn" id="homeBtn" data-tooltip="Home">
+              <i class="fa-solid fa-house-user"></i>
+            </a>
+            <a href="profile.html" class="nav-btn" id="profileBtn"data-tooltip="Profile">
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="#" class="nav-btn" id="messagesBtn" data-tooltip="Messages">
+              <i class="fa-solid fa-message"></i>
+            </a>
+          </div>
+          <div class="search-container">
+            <div class="search-input-wrapper">
+              <input type="text" id="searchInput" placeholder="🔍︎ Search" />
+            </div>
+          </div>
+
+          <div class="nav-right">
+            <a
+              href="createpin.html"
+              class="nav-btn"
+              id="createBtn"
+              data-tooltip="Create"
+            >
+              <i class="fa-solid fa-plus"></i>
+            </a>
+            <a href="#" class="nav-btn" id="updatesBtn" data-tooltip="Updates">
+              <i class="fa-solid fa-bell"></i>
+            </a>
+            <a href="#" class="nav-btn" id="settingsBtn" data-tooltip="Settings">
+              <i class="fa-solid fa-gear"></i>
+            </a>
+          </div>
+        </nav>
+
+        <div class="category-filters-container">
+          <button class="filter-tag active">all</button>
+          <button class="filter-tag">fits</button>
+          <button class="filter-tag">uni life</button>
+          <button class="filter-tag">mantras</button>
+          <button class="filter-tag">safe space</button>
+          <button class="filter-tag">clean diet</button>
+        </div>
+
+        <div class="post">
+          <div class="hover-icon">
+            <i class="fa-solid fa-download"></i>
+          </div>
+        </div>
+
+
+       
+
+        <div class="feed" id="feed">
+          <div class="post" data-category="all-only">
+            <img src="accessories.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+
+          <div class="post" data-category="all-only">
+            <img src="berlin.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="shoes.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="todo.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="burger.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="goal.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="heart.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="coffee.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="cfmaker.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="fit.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="geout.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="outfit3.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="boat.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="white.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="steak.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="blue.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="wins.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="bread.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="story.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="remember.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="sweater.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="london.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="cage.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="library.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="cucumber.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="leaf.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="porch.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="notes.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="quote.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="choice.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="outfit1.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="strawberry.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="rs.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="pasta.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="lamp.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="mirror.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="broco.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="grateful.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="table.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="pants.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="mac.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="ipad.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="glasses.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="outfit2.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="nails.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="grapes.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="breakfast.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="avocado.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="all-only">
+            <img src="shrimp.jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+
+           <div class="post" data-category="fits">
+           <div class = "pin-header"> <h1> fits </h1> <a href = "#"> 
+              <div class = "view-button"> View Board</div> </a> 
+            </div> 
+            </div>
+          <div class="post" data-category="fits">
+            <img src="fit (1).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="fits">
+            <img src="fit (2).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="fits">
+            <img src="fit (3).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="fits">
+            <img src="fit (4).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="fits">
+            <img src="fit (5).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="fits">
+            <img src="fit (6).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="fits">
+            <img src="fit (7).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="fits">
+            <img src="fit (8).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="fits">
+            <img src="fit (9).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="fits">
+            <img src="fit (10).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+
+           <div class="post" data-category="uni-life">
+           <div class = "pin-header"> <h1> uni life </h1> <a href = "#"> 
+              <div class = "view-button"> View Board</div> </a> 
+            </div> 
+             </div>
+          <div class="post" data-category="uni-life">
+            <img src="acad (1).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="uni-life">
+            <img src="acad (2).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="uni-life">
+            <img src="acad (3).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="uni-life">
+            <img src="acad (4).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="uni-life">
+            <img src="acad (5).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="uni-life">
+            <img src="acad (6).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="uni-life">
+            <img src="acad (7).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="uni-life">
+            <img src="acad (8).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="uni-life">
+            <img src="acad (9).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="uni-life">
+            <img src="acad (10).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+
+           <div class="post" data-category="mantras">
+           <div class = "pin-header"> <h1> mantras </h1> <a href = "#"> 
+              <div class = "view-button"> View Board</div> </a> 
+            </div> 
+          </div>
+          <div class="post" data-category="mantras">
+            <img src="mantra (1).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="mantras">
+            <img src="mantra (2).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="mantras">
+            <img src="mantra (3).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="mantras">
+            <img src="mantra (4).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="mantras">
+            <img src="mantra (5).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="mantras">
+            <img src="mantra (6).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="mantras">
+            <img src="mantra (7).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="mantras">
+            <img src="mantra (8).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="mantras">
+            <img src="mantra (9).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="mantras">
+            <img src="mantra (10).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+
+          <div class="post" data-category="safe-space">
+           <div class = "pin-header"> <h1> safe space </h1> <a href = "#"> 
+              <div class = "view-button"> View Board</div> </a> 
+            </div> 
+          </div>
+          <div class="post" data-category="safe-space">
+            <img src="safe (1).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="safe-space">
+            <img src="safe (2).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="safe-space">
+            <img src="safe (3).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="safe-space">
+            <img src="safe (4).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="safe-space">
+            <img src="safe (5).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="safe-space">
+            <img src="safe (6).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="safe-space">
+            <img src="safe (7).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="safe-space">
+            <img src="safe (8).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="safe-space">
+            <img src="safe (9).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="safe-space">
+            <img src="safe (10).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+
+
+          <div class="post" data-category="clean-diet">
+           <div class = "pin-header"> <h1> clean diet </h1> <a href = "#"> 
+              <div class = "view-button"> View Board</div> </a> 
+            </div> 
+          </div>
+          <div class="post" data-category="clean-diet">
+            <img src="clean (1).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="clean-diet">
+            <img src="clean (2).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="clean-diet">
+            <img src="clean (3).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="clean-diet">
+            <img src="clean (4).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="clean-diet">
+            <img src="clean (5).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="clean-diet">
+            <img src="clean (6).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="clean-diet">
+            <img src="clean (7).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="clean-diet">
+            <img src="clean (8).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="clean-diet">
+            <img src="clean (9).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+          <div class="post" data-category="clean-diet">
+            <img src="clean (10).jpg" />
+            <div class="hover-icon">
+              <i class="fa-solid fa-download"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="imageModal" class="modal">
+      <span class="close-button">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div id="caption"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
