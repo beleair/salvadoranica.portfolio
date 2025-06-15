@@ -1,0 +1,182 @@
+
+body {
+    background-color: #FAF5EE;
+}
+
+.activity-page-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Header Section for the song details */
+
+.activity-header {
+    background-color: #e9ad37;
+    color: #FAF5EE;
+    padding: 60px 25px 40px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.activity-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.activity-title {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.activity-subtitle {
+    font-size: 1.4em;
+    font-style: italic;
+    margin-bottom: 25px;
+    font-weight: 400;
+    color: rgba(250, 245, 238, 0.8);
+}
+
+.listen-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #1D503A;
+    color: #f8c55f;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.listen-link:hover {
+    background-color: #FAF5EE;
+}
+
+.listen-link i {
+    font-size: 1.2em;
+}
+
+.activity-lyrics {
+    padding-bottom: 80px;
+}
+
+.lyric-section {
+    background-color: #F8F0E7;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(29, 80, 58, 0.08);
+    text-align: center;
+}
+
+.lyric-section:last-child {
+    margin-bottom: 0;
+}
+
+.verse-title {
+    font-size: 1.8em;
+    color: #1D503A;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.lyric-section p {
+    font-size: 1.15em;
+    margin-bottom: 15px;
+    color: #1D503A;
+}
+
+.lyric-section p:last-child {
+    margin-bottom: 0;
+}
+
+.lyric-section.chorus {
+    background-color: #E6E1D8;
+    border-color: rgba(29, 80, 58, 0.15);
+}
+
+/* Override container max-width for narrower content section */
+.container {
+    max-width: 900px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .activity-page-content {
+        padding-top: 80px;
+    }
+    .activity-header {
+        padding: 40px 20px 30px;
+    }
+    .activity-image {
+        width: 150px;
+    }
+    .activity-title {
+        font-size: 2.8em;
+    }
+    .activity-subtitle {
+        font-size: 1.2em;
+    }
+    .listen-link {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    .lyric-section {
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    .verse-title {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    .lyric-section p {
+        font-size: 1.05em;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .activity-page-content {
+        padding-top: 70px;
+    }
+    .activity-header {
+        padding: 30px 15px 25px;
+    }
+    .activity-image {
+        width: 120px;
+    }
+    .activity-title {
+        font-size: 2.2em;
+    }
+    .activity-subtitle {
+        font-size: 1em;
+    }
+    .listen-link {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+    .lyric-section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .verse-title {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+    .lyric-section p {
+        font-size: 0.95em;
+        margin-bottom: 10px;
+    }
+}

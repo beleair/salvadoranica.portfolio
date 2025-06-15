@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 8: NU Quest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/activity8.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="../../index.html#hero" class="nav-link">Home</a></li>
+                <li><a href="../../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../../index.html#skills" class="nav-link">Expertise</a></li>
+                <li><a href="../../index.html#projects" class="nav-link">Showcase</a></li>
+                <li><a href="../../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="activity-content">
+        <div class="container">
+            <div class="main-form-wrapper">
+                <div class="form-intro-section">
+                    <div class="activity-header">
+                        <img src="https://national-u.edu.ph/wp-content/uploads/2018/12/NU-Shield_FC_RGB_POS_AW.png" alt="logo" class="nu-logo">
+                        <span class="activity-title">NU Quest</span>
+                    </div>
+                    
+                    <h2 class="form-main-title">Online Application</h2>
+
+                    <div class="reminder">
+                        <b>Reminder:</b><br>
+                        Please provide your correct and complete information.<br>
+                        Fields marked with asterisk (*) are required.
+                    </div>
+                </div>
+
+                <form action="createacc.html" class="nu-form">
+                    <div class="form-section">
+                        <h3>Application Term & Course/Strand</h3><hr>
+                        <div class="form-group">
+                            <label for="campus">Campus:*</label>
+                            <select name="campus" id="campus" required>
+                                <option value="">— Please choose an option.</option>
+                                <optgroup label="National Capital Region (NCR)">
+                                  <option value="NU Manila">NU Manila</option>
+                                  <option value="NU Fairview">NU Fairview</option>
+                                  <option value="NU MOA">NU MOA</option>
+                                  <option value="NU East Ortigas">NU East Ortigas</option>
+                                  <option value="NU Las Piñas">NU Las Piñas</option>
+                                </optgroup>
+                                <optgroup label="Region III (Central Luzon)">
+                                  <option value="NU Baliwag">NU Baliwag </option>
+                                  <option value="NU Clark">NU Clark</option>
+                                </optgroup>
+                                <optgroup label="Region IV-A (CALABARZON)">
+                                  <option value="NU Laguna">NU Laguna </option>
+                                  <option value="NU Dasmariñas">NU Dasmariñas</option>
+                                  <option value="NU Lipa">NU Lipa</option>
+                                </optgroup>
+                                <optgroup label="Region VI (Western Visayas)">
+                                  <option value="NU Bacolod">NU Bacolod </option>
+                                </optgroup>
+                                <optgroup label="Region VII (Central Visayas)">
+                                  <option value="NU Cebu">NU Cebu </option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="acadyear">Academic Year:*</label>
+                            <select name="acadyear" id="acadyear" required>
+                                <option value="">— Please choose an option.</option>
+                                <option value="2025-2026">2025 - 2026</option>
+                                <option value="2026-2027">2026 - 2027</option>
+                                <option value="2027-2028">2027 - 2028</option>
+                                <option value="2028-2029">2028 - 2029</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="acadterm">Academic Term:*</label>
+                            <select name="acadterm" id="acadterm" required>
+                                <option value="">— Please choose an option.</option>
+                                <option value="Term 1">Term 1</option>
+                                <option value="Term 2">Term 2</option>
+                                <option value="Term 3">Term 3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="program">Program/Strand:*</label>
+                            <select name="program" id="program" required>
+                                <option value="">— Please choose an option.</option>
+                                <optgroup label="Undergraduate Programs">
+                                    <option value="BS in Computer Science">BS in Computer Science</option>
+                                    <option value="BS in Information Technology">BS in Information Technology</option>
+                                    <option value="BS in Accountancy">BS in Accountancy</option>
+                                    <option value="BS in Business Administration">BS in Business Administration</option>
+                                </optgroup>
+                                <optgroup label="Senior High School Strands">
+                                    <option value="STEM">STEM (Science, Technology, Engineering, and Mathematics)</option>
+                                    <option value="ABM">ABM (Accountancy, Business, and Management)</option>
+                                    <option value="HUMSS">HUMSS (Humanities and Social Sciences)</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Personal Information</h3><hr>
+                        <div class="info-note">
+                            <b>Note:</b><br>
+                            Please write your names based on your PSA/NSO-copy of birth certificate.<br>
+                            For married females who wanted to use their married name, write your names based on your marriage certificate.
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last Name:*</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname">First Name:*</label>
+                            <input type="text" id="firstname" name="firstname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="middlename">Middle Name:*</label>
+                            <input type="text" id="middlename" name="middlename" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile No.:*</label>
+                            <input type="text" id="mobile" name="mobile" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="nationality">Nationality:*</label>
+                            <select name="nationality" id="nationality" required>
+                                <option value="">— Please choose an option.</option>
+                                <option value="fil">Filipino</option>
+                                <option value="afg">Afghan</option>
+                                <option value="aland">Aland Islands</option>
+                                <option value="alba">Albanian</option>
+                                <option value="alge">Algerian</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-agreement">
+                        <input type="checkbox" id="Agreement" name="Agreement" value="Agreement" required>
+                        <label for="Agreement" class="datapriv">
+                            <b>Data Privacy Agreement</b><br>
+                            By accomplishing this form, I hereby authorize National University to retain, process, disseminate, and use for research purposes all the personal data that I provided. I understand and give consent to National University to use these information to communicate with me either via post, telephone, mobile text, email or other way possible. In the event that I do not wish to be contacted further, I shall inform the University accordingly.
+                        </label>
+                    </div>
+
+                    <div class="form-buttons">
+                        <input type="submit" value="Create Account" class="btn primary-btn">
+                        <button type="reset" class="btn secondary-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-mission">&ldquo;Driving digital evolution with every line of code.&rdquo;</p>
+            <p>&copy; 2025 NICA SALVADORA </p>
+            <a href="#" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

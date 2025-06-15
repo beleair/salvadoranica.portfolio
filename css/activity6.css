@@ -1,0 +1,351 @@
+html {
+    scroll-padding-top: 30%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: #1D503A;
+    background-color: #FAF5EE;
+    overflow-x: hidden;
+    padding-top: 150px;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+/* Calendar Controls (Month and Holiday Selection) */
+.calendar-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 120px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+
+.select-month-container,
+.select-holiday-container {
+    background-color: #F0F6F4;
+    width: 100%;
+    max-width: 880px;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Optional: adjust ul inside these containers */
+.select-month-container ul,
+.select-holiday-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+/* Style each list item link */
+.select-month-container li a,
+.select-holiday-container li a {
+    display: block;
+    padding: 4px 6px;
+    color: #1D503A;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1em;
+    text-align: left;
+}
+
+.select-month-container li a:hover,
+.select-holiday-container li a:hover {
+    background-color: #A8D1C1;
+    color: white;
+}
+
+.calendar-controls select:focus {
+    outline: none;
+    border-color: #1D503A;
+    box-shadow: 0 0 0 3px rgba(29, 80, 58, 0.2);
+}
+
+/* Responsive adjustments for lists within containers */
+@media (max-width: 992px) {
+    .calendar-controls {
+        gap: 30px;
+    }
+    .select-month-container,
+    .select-holiday-container {
+        width: 45%;
+    }
+    .select-month-container ul,
+    .select-holiday-container ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .calendar-controls {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .select-month-container,
+    .select-holiday-container {
+        width: 100%;
+        max-width: 350px;
+    }
+    .select-month-container ul,
+    .select-holiday-container ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .select-holiday-container ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .select-month-container ul,
+    .select-holiday-container ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.nav-links .top{
+    color: #E74C3C;
+    font-weight: 600;
+}
+
+.nav-links .top:hover{
+    color: #d7938c;
+    font-weight: 600;
+}
+
+.calendar-controls select:focus {
+    outline: none;
+    border-color: #1D503A;
+    box-shadow: 0 0 0 3px rgba(29, 80, 58, 0.2);
+}
+
+
+/* Table Specific Styling for Calendar */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto 100px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    min-width: 600px;
+}
+
+table caption {
+    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #1D503A;
+    background-color: #F0F6F4;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+    text-align: center;
+}
+
+table thead th {
+    background-color: #1D503A;
+    color: #FAF5EE;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    padding: 15px;
+    border: 1px solid #1D503A;
+}
+
+table tbody td {
+    background-color: #ffffff;
+    color: #333;
+    font-size: 1.8em;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    vertical-align: top;
+    height: 70px;
+}
+
+/* Style for empty days */
+.empty-day {
+    background-color: #f8f8f8;
+    color: #bbb;
+}
+
+/* Style for highlighted/holiday days */
+.holiday {
+    color: #E74C3C;
+    font-weight: 700;
+}
+
+/* Style for the "Back to Showcase" button */
+.back-to-showcase-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #1D503A;
+    color: #FAF5EE;
+    border: 2px solid #1D503A;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.back-to-showcase-btn:hover {
+    background-color: #FAF5EE;
+    color: #1D503A;
+    border-color: #1D503A;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .calendar-container {
+        padding: 30px;
+        margin: 30px auto;
+    }
+    .calendar-container h1 {
+        font-size: 2.5em;
+    }
+    .calendar-container h3 {
+        font-size: 1.3em;
+    }
+    .calendar-controls {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    table caption {
+        font-size: 2em;
+        padding: 15px;
+    }
+    table thead th {
+        font-size: 1em;
+        padding: 12px;
+    }
+    table tbody td {
+        font-size: 1.5em;
+        padding: 20px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .activity-page-content {
+        padding-top: 80px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .calendar-container {
+        padding: 25px;
+        margin: 20px auto;
+        border-radius: 8px;
+    }
+    .calendar-container h1 {
+        font-size: 2em;
+    }
+    .calendar-container h3 {
+        font-size: 1.1em;
+    }
+    table caption {
+        font-size: 1.8em;
+        padding: 12px;
+    }
+    table thead th {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+    table tbody td {
+        font-size: 1.3em;
+        padding: 15px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .activity-page-content {
+        padding-top: 70px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .calendar-container {
+        padding: 15px;
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+    .calendar-container h1 {
+        font-size: 1.7em;
+    }
+    .calendar-container h3 {
+        font-size: 1em;
+    }
+    .calendar-controls select {
+        width: 100%;
+    }
+    table caption {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+    table thead th {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+    table tbody td {
+        font-size: 1em;
+        padding: 10px;
+        height: 40px;
+    }
+}
+
+/* Styles for the new holiday list */
+.holiday-list {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.holiday-list div {
+    margin-bottom: 5px;
+}
+
+.holiday-list a {
+    color: #1D503A;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.holiday-list a:hover {
+    color: #E74C3C;
+}
+
+.holiday-link-text {
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0;
+}

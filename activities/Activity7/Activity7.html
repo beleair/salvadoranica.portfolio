@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 7: Calendar w/ Div</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/activity7.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="../../index.html#hero" class="nav-link">Home</a></li>
+                <li><a href="../../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../../index.html#skills" class="nav-link">Expertise</a></li>
+                <li><a href="../../index.html#projects" class="nav-link">Showcase</a></li>
+                <li><a href="../../index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" class="top">Back to Top</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="calendar-page-content">
+        <section class="calendar-hero">
+            <div class="container">
+                <h1 class="calendar-title">2025 Calendar</h1>
+            </div>
+        </section>
+
+        <section id="calendar-section" class="calendar-section">
+            <div class="container">
+                <div class="calendar-controls">
+    <div class="select-month-container">
+        <h2>Choose a Month</h2>
+        <ul>
+            <li><a href="#january-container">January</a></li>
+            <li><a href="#february-container">February</a></li>
+            <li><a href="#march-container">March</a></li>
+            <li><a href="#april-container">April</a></li>
+            <li><a href="#may-container">May</a></li>
+            <li><a href="#june-container">June</a></li>
+            <li><a href="#july-container">July</a></li>
+            <li><a href="#august-container">August</a></li>
+            <li><a href="#september-container">September</a></li>
+            <li><a href="#october-container">October</a></li>
+            <li><a href="#november-container">November</a></li>
+            <li><a href="#december-container">December</a></li>
+        </ul>
+    </div>
+
+    <div class="select-holiday-container">
+        <h2>Choose a Holiday</h2>
+        <ul>
+            <li><a href="#new-years-day">New Year's Day<br>(Jan 1)</a></li>
+            <li><a href="#good-friday">Good Friday <br>(Apr 18)</a></li>
+            <li><a href="#black-saturday">Black Saturday <br>(Apr 19)</a></li>
+            <li><a href="#labor-day">Labor Day (May 1)</a></li>
+            <li><a href="#independence-day">Independence Day (Jun 12)</a></li>
+            <li><a href="#ninoy-aquino-day">Ninoy Aquino Day (Aug 21)</a></li>
+            <li><a href="#national-heroes-day">National Heroes Day (Aug 25)</a></li>
+            <li><a href="#all-saints-day">All Saints' Day (Nov 1)</a></li>
+            <li><a href="#all-souls-day">All Souls' Day (Nov 2)</a></li>
+            <li><a href="#bonifacio-day">Bonifacio Day (Nov 30)</a></li>
+            <li><a href="#christmas-day">Christmas Day (Dec 25)</a></li>
+            <li><a href="#rizal-day">Rizal Day (Dec 30)</a></li>
+        </ul>
+    </div>
+</div>
+
+                <div class="calendar-grid">
+                    <div class="month-container" id="january-container">
+                        <h2 class="month-title">January 2025</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody id="january-table">
+                                <tr>
+                                    <td class="prev-month">29</td>
+                                    <td class="prev-month">30</td>
+                                    <td class="prev-month">31</td>
+                                    <td class="current-month holiday" id="new-years-day">1</td>
+                                    <td class="current-month">2</td>
+                                    <td class="current-month">3</td>
+                                    <td class="current-month">4</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">5</td>
+                                    <td class="current-month">6</td>
+                                    <td class="current-month">7</td>
+                                    <td class="current-month">8</td>
+                                    <td class="current-month">9</td>
+                                    <td class="current-month">10</td>
+                                    <td class="current-month">11</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">12</td>
+                                    <td class="current-month">13</td>
+                                    <td class="current-month">14</td>
+                                    <td class="current-month">15</td>
+                                    <td class="current-month">16</td>
+                                    <td class="current-month">17</td>
+                                    <td class="current-month">18</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">19</td>
+                                    <td class="current-month">20</td>
+                                    <td class="current-month">21</td>
+                                    <td class="current-month">22</td>
+                                    <td class="current-month">23</td>
+                                    <td class="current-month">24</td>
+                                    <td class="current-month">25</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">26</td>
+                                    <td class="current-month">27</td>
+                                    <td class="current-month">28</td>
+                                    <td class="current-month">29</td>
+                                    <td class="current-month">30</td>
+                                    <td class="current-month">31</td>
+                                    <td class="next-month">1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="month-container" id="february-container">
+                        <h2 class="month-title">February 2025</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody id="february-table">
+                                <tr>
+                                    <td class="prev-month">26</td>
+                                    <td class="prev-month">27</td>
+                                    <td class="prev-month">28</td>
+                                    <td class="prev-month">29</td>
+                                    <td class="prev-month">30</td>
+                                    <td class="prev-month">31</td>
+                                    <td class="current-month">1</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">2</td>
+                                    <td class="current-month">3</td>
+                                    <td class="current-month">4</td>
+                                    <td class="current-month">5</td>
+                                    <td class="current-month">6</td>
+                                    <td class="current-month">7</td>
+                                    <td class="current-month">8</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">9</td>
+                                    <td class="current-month">10</td>
+                                    <td class="current-month">11</td>
+                                    <td class="current-month">12</td>
+                                    <td class="current-month">13</td>
+                                    <td class="current-month">14</td>
+                                    <td class="current-month">15</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">16</td>
+                                    <td class="current-month">17</td>
+                                    <td class="current-month">18</td>
+                                    <td class="current-month">19</td>
+                                    <td class="current-month">20</td>
+                                    <td class="current-month">21</td>
+                                    <td class="current-month">22</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">23</td>
+                                    <td class="current-month">24</td>
+                                    <td class="current-month">25</td>
+                                    <td class="current-month">26</td>
+                                    <td class="current-month">27</td>
+                                    <td class="current-month">28</td>
+                                    <td class="next-month">1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="month-container" id="march-container">
+                        <h2 class="month-title">March 2025</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody id="march-table">
+                                <tr>
+                                    <td class="prev-month">23</td>
+                                    <td class="prev-month">24</td>
+                                    <td class="prev-month">25</td>
+                                    <td class="prev-month">26</td>
+                                    <td class="prev-month">27</td>
+                                    <td class="prev-month">28</td>
+                                    <td class="current-month">1</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">2</td>
+                                    <td class="current-month">3</td>
+                                    <td class="current-month">4</td>
+                                    <td class="current-month">5</td>
+                                    <td class="current-month">6</td>
+                                    <td class="current-month">7</td>
+                                    <td class="current-month">8</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">9</td>
+                                    <td class="current-month">10</td>
+                                    <td class="current-month">11</td>
+                                    <td class="current-month">12</td>
+                                    <td class="current-month">13</td>
+                                    <td class="current-month">14</td>
+                                    <td class="current-month">15</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">16</td>
+                                    <td class="current-month">17</td>
+                                    <td class="current-month">18</td>
+                                    <td class="current-month">19</td>
+                                    <td class="current-month">20</td>
+                                    <td class="current-month">21</td>
+                                    <td class="current-month">22</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">23</td>
+                                    <td class="current-month">24</td>
+                                    <td class="current-month">25</td>
+                                    <td class="current-month">26</td>
+                                    <td class="current-month">27</td>
+                                    <td class="current-month">28</td>
+                                    <td class="current-month">29</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">30</td>
+                                    <td class="current-month">31</td>
+                                    <td class="next-month">1</td>
+                                    <td class="next-month">2</td>
+                                    <td class="next-month">3</td>
+                                    <td class="next-month">4</td>
+                                    <td class="next-month">5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="month-container" id="april-container">
+                        <h2 class="month-title">April 2025</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody id="april-table">
+                                <tr>
+                                    <td class="prev-month">30</td>
+                                    <td class="prev-month">31</td>
+                                    <td class="current-month">1</td>
+                                    <td class="current-month">2</td>
+                                    <td class="current-month">3</td>
+                                    <td class="current-month">4</td>
+                                    <td class="current-month">5</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">6</td>
+                                    <td class="current-month">7</td>
+                                    <td class="current-month">8</td>
+                                    <td class="current-month">9</td>
+                                    <td class="current-month">10</td>
+                                    <td class="current-month">11</td>
+                                    <td class="current-month">12</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">13</td>
+                                    <td class="current-month">14</td>
+                                    <td class="current-month">15</td>
+                                    <td class="current-month">16</td>
+                                    <td class="current-month">17</td>
+                                    <td class="current-month holiday" id="good-friday">18</td>
+                                    <td class="current-month holiday" id="black-saturday">19</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">20</td>
+                                    <td class="current-month">21</td>
+                                    <td class="current-month">22</td>
+                                    <td class="current-month">23</td>
+                                    <td class="current-month">24</td>
+                                    <td class="current-month">25</td>
+                                    <td class="current-month">26</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">27</td>
+                                    <td class="current-month">28</td>
+                                    <td class="current-month">29</td>
+                                    <td class="current-month">30</td>
+                                    <td class="next-month">1</td>
+                                    <td class="next-month">2</td>
+                                    <td class="next-month">3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="month-container" id="may-container">
+                        <h2 class="month-title">May 2025</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody id="may-table">
+                                <tr>
+                                    <td class="prev-month">27</td>
+                                    <td class="prev-month">28</td>
+                                    <td class="prev-month">29</td>
+                                    <td class="prev-month">30</td>
+                                    <td class="current-month holiday" id="labor-day">1</td>
+                                    <td class="current-month">2</td>
+                                    <td class="current-month">3</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">4</td>
+                                    <td class="current-month">5</td>
+                                    <td class="current-month">6</td>
+                                    <td class="current-month">7</td>
+                                    <td class="current-month">8</td>
+                                    <td class="current-month">9</td>
+                                    <td class="current-month">10</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">11</td>
+                                    <td class="current-month">12</td>
+                                    <td class="current-month">13</td>
+                                    <td class="current-month">14</td>
+                                    <td class="current-month">15</td>
+                                    <td class="current-month">16</td>
+                                    <td class="current-month">17</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">18</td>
+                                    <td class="current-month">19</td>
+                                    <td class="current-month">20</td>
+                                    <td class="current-month">21</td>
+                                    <td class="current-month">22</td>
+                                    <td class="current-month">23</td>
+                                    <td class="current-month">24</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">25</td>
+                                    <td class="current-month">26</td>
+                                    <td class="current-month">27</td>
+                                    <td class="current-month">28</td>
+                                    <td class="current-month">29</td>
+                                    <td class="current-month">30</td>
+                                    <td class="current-month">31</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="month-container" id="june-container">
+                        <h2 class="month-title">June 2025</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody id="june-table">
+                                <tr>
+                                    <td class="current-month">1</td>
+                                    <td class="current-month">2</td>
+                                    <td class="current-month">3</td>
+                                    <td class="current-month">4</td>
+                                    <td class="current-month">5</td>
+                                    <td class="current-month">6</td>
+                                    <td class="current-month">7</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">8</td>
+                                    <td class="current-month">9</td>
+                                    <td class="current-month">10</td>
+                                    <td class="current-month">11</td>
+                                    <td class="current-month holiday" id="independence-day">12</td>
+                                    <td class="current-month">13</td>
+                                    <td class="current-month">14</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">15</td>
+                                    <td class="current-month">16</td>
+                                    <td class="current-month">17</td>
+                                    <td class="current-month">18</td>
+                                    <td class="current-month">19</td>
+                                    <td class="current-month">20</td>
+                                    <td class="current-month">21</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">22</td>
+                                    <td class="current-month">23</td>
+                                    <td class="current-month">24</td>
+                                    <td class="current-month">25</td>
+                                    <td class="current-month">26</td>
+                                    <td class="current-month">27</td>
+                                    <td class="current-month">28</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">29</td>
+                                    <td class="current-month">30</td>
+                                    <td class="next-month">1</td>
+                                    <td class="next-month">2</td>
+                                    <td class="next-month">3</td>
+                                    <td class="next-month">4</td>
+                                    <td class="next-month">5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="month-container" id="july-container">
+                        <h2 class="month-title">July 2025</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody id="july-table">
+                                <tr>
+                                    <td class="prev-month">29</td>
+                                    <td class="prev-month">30</td>
+                                    <td class="current-month">1</td>
+                                    <td class="current-month">2</td>
+                                    <td class="current-month">3</td>
+                                    <td class="current-month">4</td>
+                                    <td class="current-month">5</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">6</td>
+                                    <td class="current-month">7</td>
+                                    <td class="current-month">8</td>
+                                    <td class="current-month">9</td>
+                                    <td class="current-month">10</td>
+                                    <td class="current-month">11</td>
+                                    <td class="current-month">12</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">13</td>
+                                    <td class="current-month">14</td>
+                                    <td class="current-month">15</td>
+                                    <td class="current-month">16</td>
+                                    <td class="current-month">17</td>
+                                    <td class="current-month">18</td>
+                                    <td class="current-month">19</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">20</td>
+                                    <td class="current-month">21</td>
+                                    <td class="current-month">22</td>
+                                    <td class="current-month">23</td>
+                                    <td class="current-month">24</td>
+                                    <td class="current-month">25</td>
+                                    <td class="current-month">26</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">27</td>
+                                    <td class="current-month">28</td>
+                                    <td class="current-month">29</td>
+                                    <td class="current-month">30</td>
+                                    <td class="current-month">31</td>
+                                    <td class="next-month">1</td>
+                                    <td class="next-month">2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="month-container" id="august-container">
+                        <h2 class="month-title">August 2025</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody id="august-table">
+                                <tr>
+                                    <td class="prev-month">27</td>
+                                    <td class="prev-month">28</td>
+                                    <td class="prev-month">29</td>
+                                    <td class="prev-month">30</td>
+                                    <td class="prev-month">31</td>
+                                    <td class="current-month">1</td>
+                                    <td class="current-month">2</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">3</td>
+                                    <td class="current-month">4</td>
+                                    <td class="current-month">5</td>
+                                    <td class="current-month">6</td>
+                                    <td class="current-month">7</td>
+                                    <td class="current-month">8</td>
+                                    <td class="current-month">9</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">10</td>
+                                    <td class="current-month">11</td>
+                                    <td class="current-month">12</td>
+                                    <td class="current-month">13</td>
+                                    <td class="current-month">14</td>
+                                    <td class="current-month">15</td>
+                                    <td class="current-month">16</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">17</td>
+                                    <td class="current-month">18</td>
+                                    <td class="current-month">19</td>
+                                    <td class="current-month">20</td>
+                                    <td class="current-month holiday" id="ninoy-aquino-day">21</td>
+                                    <td class="current-month">22</td>
+                                    <td class="current-month">23</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">24</td>
+                                    <td class="current-month holiday" id="national-heroes-day">25</td>
+                                    <td class="current-month">26</td>
+                                    <td class="current-month">27</td>
+                                    <td class="current-month">28</td>
+                                    <td class="current-month">29</td>
+                                    <td class="current-month">30</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">31</td>
+                                    <td class="next-month">1</td>
+                                    <td class="next-month">2</td>
+                                    <td class="next-month">3</td>
+                                    <td class="next-month">4</td>
+                                    <td class="next-month">5</td>
+                                    <td class="next-month">6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="month-container" id="september-container">
+                        <h2 class="month-title">September 2025</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody id="september-table">
+                                <tr>
+                                    <td class="prev-month">31</td>
+                                    <td class="current-month">1</td>
+                                    <td class="current-month">2</td>
+                                    <td class="current-month">3</td>
+                                    <td class="current-month">4</td>
+                                    <td class="current-month">5</td>
+                                    <td class="current-month">6</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">7</td>
+                                    <td class="current-month">8</td>
+                                    <td class="current-month">9</td>
+                                    <td class="current-month">10</td>
+                                    <td class="current-month">11</td>
+                                    <td class="current-month">12</td>
+                                    <td class="current-month">13</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">14</td>
+                                    <td class="current-month">15</td>
+                                    <td class="current-month">16</td>
+                                    <td class="current-month">17</td>
+                                    <td class="current-month">18</td>
+                                    <td class="current-month">19</td>
+                                    <td class="current-month">20</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">21</td>
+                                    <td class="current-month">22</td>
+                                    <td class="current-month">23</td>
+                                    <td class="current-month">24</td>
+                                    <td class="current-month">25</td>
+                                    <td class="current-month">26</td>
+                                    <td class="current-month">27</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">28</td>
+                                    <td class="current-month">29</td>
+                                    <td class="current-month">30</td>
+                                    <td class="next-month">1</td>
+                                    <td class="next-month">2</td>
+                                    <td class="next-month">3</td>
+                                    <td class="next-month">4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="month-container" id="october-container">
+                        <h2 class="month-title">October 2025</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody id="october-table">
+                                <tr>
+                                    <td class="prev-month">28</td>
+                                    <td class="prev-month">29</td>
+                                    <td class="prev-month">30</td>
+                                    <td class="current-month">1</td>
+                                    <td class="current-month">2</td>
+                                    <td class="current-month">3</td>
+                                    <td class="current-month">4</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">5</td>
+                                    <td class="current-month">6</td>
+                                    <td class="current-month">7</td>
+                                    <td class="current-month">8</td>
+                                    <td class="current-month">9</td>
+                                    <td class="current-month">10</td>
+                                    <td class="current-month">11</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">12</td>
+                                    <td class="current-month">13</td>
+                                    <td class="current-month">14</td>
+                                    <td class="current-month">15</td>
+                                    <td class="current-month">16</td>
+                                    <td class="current-month">17</td>
+                                    <td class="current-month">18</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">19</td>
+                                    <td class="current-month">20</td>
+                                    <td class="current-month">21</td>
+                                    <td class="current-month">22</td>
+                                    <td class="current-month">23</td>
+                                    <td class="current-month">24</td>
+                                    <td class="current-month">25</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">26</td>
+                                    <td class="current-month">27</td>
+                                    <td class="current-month">28</td>
+                                    <td class="current-month">29</td>
+                                    <td class="current-month">30</td>
+                                    <td class="current-month">31</td>
+                                    <td class="next-month">1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="month-container" id="november-container">
+                        <h2 class="month-title">November 2025</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody id="november-table">
+                                <tr>
+                                    <td class="prev-month">26</td>
+                                    <td class="prev-month">27</td>
+                                    <td class="prev-month">28</td>
+                                    <td class="prev-month">29</td>
+                                    <td class="prev-month">30</td>
+                                    <td class="prev-month">31</td>
+                                    <td class="current-month holiday" id="all-saints-day">1</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month holiday" id="all-souls-day">2</td>
+                                    <td class="current-month">3</td>
+                                    <td class="current-month">4</td>
+                                    <td class="current-month">5</td>
+                                    <td class="current-month">6</td>
+                                    <td class="current-month">7</td>
+                                    <td class="current-month">8</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">9</td>
+                                    <td class="current-month">10</td>
+                                    <td class="current-month">11</td>
+                                    <td class="current-month">12</td>
+                                    <td class="current-month">13</td>
+                                    <td class="current-month">14</td>
+                                    <td class="current-month">15</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">16</td>
+                                    <td class="current-month">17</td>
+                                    <td class="current-month">18</td>
+                                    <td class="current-month">19</td>
+                                    <td class="current-month">20</td>
+                                    <td class="current-month">21</td>
+                                    <td class="current-month">22</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">23</td>
+                                    <td class="current-month">24</td>
+                                    <td class="current-month">25</td>
+                                    <td class="current-month">26</td>
+                                    <td class="current-month">27</td>
+                                    <td class="current-month">28</td>
+                                    <td class="current-month">29</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month holiday" id="bonifacio-day">30</td>
+                                    <td class="next-month">1</td>
+                                    <td class="next-month">2</td>
+                                    <td class="next-month">3</td>
+                                    <td class="next-month">4</td>
+                                    <td class="next-month">5</td>
+                                    <td class="next-month">6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="month-container" id="december-container">
+                        <h2 class="month-title">December 2025</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody id="december-table">
+                                <tr>
+                                    <td class="prev-month">30</td>
+                                    <td class="current-month">1</td>
+                                    <td class="current-month">2</td>
+                                    <td class="current-month">3</td>
+                                    <td class="current-month">4</td>
+                                    <td class="current-month">5</td>
+                                    <td class="current-month">6</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">7</td>
+                                    <td class="current-month">8</td>
+                                    <td class="current-month">9</td>
+                                    <td class="current-month">10</td>
+                                    <td class="current-month">11</td>
+                                    <td class="current-month">12</td>
+                                    <td class="current-month">13</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">14</td>
+                                    <td class="current-month">15</td>
+                                    <td class="current-month">16</td>
+                                    <td class="current-month">17</td>
+                                    <td class="current-month">18</td>
+                                    <td class="current-month">19</td>
+                                    <td class="current-month">20</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">21</td>
+                                    <td class="current-month">22</td>
+                                    <td class="current-month">23</td>
+                                    <td class="current-month">24</td>
+                                    <td class="current-month holiday" id="christmas-day">25</td>
+                                    <td class="current-month">26</td>
+                                    <td class="current-month">27</td>
+                                </tr>
+                                <tr>
+                                    <td class="current-month">28</td>
+                                    <td class="current-month">29</td>
+                                    <td class="current-month holiday" id="rizal-day">30</td>
+                                    <td class="current-month">31</td>
+                                    <td class="next-month">1</td>
+                                    <td class="next-month">2</td>
+                                    <td class="next-month">3</td>
+                                    <td class="next-month">4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-mission">&ldquo;Driving digital evolution with every line of code.&rdquo;</p>
+            <p>&copy; 2025 NICA SALVADORA </p>
+            <a href="#top" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
